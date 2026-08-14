@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 function FormCr()
 {
         const [pass1,seterpas1]=useState("");
@@ -22,6 +22,7 @@ function FormCr()
             }
           }
         return(
+          <>
                <form className="my-5"  style={{ width:"50%", margin:"auto"}}>
   <div className="mb-3">
     <label className="form-label">UserName</label>
@@ -32,6 +33,7 @@ function FormCr()
     <label  className="form-label">Password</label>
     <input type="password" onChange={eventCHanged} className="form-control" value={pass1} />
   </div>
+
    <div className="mb-3">
     <label  className="form-label">Password check</label>
     <input type="password"  onChange={eventCHanged2} className="form-control" value={pass2}/>
@@ -43,7 +45,8 @@ function FormCr()
   </div>
   <button type="submit" className="btn btn-primary">Submit</button>
        </form>
+       <Link className="btn btn-danger" to={"/"}>Home</Link>
+       </>
         );
-
 }
 export default FormCr;
