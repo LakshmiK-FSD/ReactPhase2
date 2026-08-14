@@ -1,0 +1,63 @@
+ *{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+ .llk{
+
+  display: flex;
+  flex-wrap: wrap;
+  border: 8px double rgb(3, 0, 0);
+  background-color: rgba(15, 211, 38, 0.731);
+  color: rgb(0, 0, 0);
+ text-align: center;
+font-size: 10px;
+border-radius:20px;
+box-shadow:8px 10px 8px greenyellow;
+padding: auto;
+ }
+ .llkpar{
+  display:flex;
+   gap: 20px;
+   justify-content: space-around;
+   flex-wrap: wrap;
+ }
+ .llk img{
+height:180px;
+  padding:8px;
+  width:200px;
+  border-radius:20px;
+ }
+ table{
+  border-collapse: collapse;
+  
+  font-weight:bolder;
+ }
+
+ button{
+flex: 1 1 100%;
+justify-content: center;
+    margin: 20px 10px 20px 30px;
+max-width:200px;
+padding:5px 0;
+border-radius:8px;
+padding-top:10px;
+padding-bottom:10px;
+border:1px solid;
+background-color: rgb(26, 14, 0);
+color: aquamarine;
+ }
+ #aded{
+  border: 2px solid black;
+  border-radius:8px;
+  margin:10px -120px 10px 80px;
+  padding:10px;
+  background-color: rgba(10, 24, 0, 0.872);
+  color: aliceblue;
+ }
+ #errorr{
+  color: rgb(233, 231, 231);
+  background-color: red;
+  margin:200px 0 50px;
+  padding:50px 500px;
+ }

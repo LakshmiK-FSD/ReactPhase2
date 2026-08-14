@@ -46,6 +46,7 @@ function FormCr()
   <button type="submit" className="btn btn-primary">Submit</button>
        </form>
        <Link className="btn btn-danger" to={"/"}>Home</Link>
+       <Link className="btn btn-danger" to={"/card"}>card</Link>
        </>
         );
 }
