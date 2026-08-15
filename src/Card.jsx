@@ -1,9 +1,11 @@
-import loaderGif from "./assets/arthurpx-book-27293_512.gif";
-import Tryed from "./Tryed.jsx";
+import loaderGif from "./assets/blendertimer-load-38.gif";
 import { useEffect, useState} from "react";
 import useFetching from "./useFetching.jsx";
+import Carder from "./Carder.jsx";
+import { Link } from "react-router-dom";
+import Home from "./Home.jsx";
 function Card() {
-  const brmode="http://localhost:3000/animalsAdap"
+  const brmode="http://localhost:3000/school"
 const [err,tempList] = useFetching(brmode);
   if (!tempList) {
     return (
@@ -12,30 +14,22 @@ const [err,tempList] = useFetching(brmode);
       </div>
     );
   }
-  function deleter(ider) {
-    const temperary = tempList.filter(ide => ide.id !== ider);
-    setTempli(temperary);
-  }
-
-  const Permen = tempList.map(callBacPar => (
-    <Tryed
+  const ListCard= tempList.map(callBacPar => (
+    <Carder
       key={callBacPar.id}
-      availability={callBacPar.availability}
-      habitat={callBacPar.habitat}
-      foodPreference={callBacPar.foodPreference}
-      breed={callBacPar.breed}
-      rating={callBacPar.rating}
-      Age={callBacPar.age}
-      price={callBacPar.price}
+      priceFee={callBacPar.priceFee}
+      height={callBacPar.height}
+      weight={callBacPar.weight}
+      age={callBacPar.age}
       id={callBacPar.id}
-      image={callBacPar.image}
       Name={callBacPar.Name}
-      venum={callBacPar.venum}
-      deleter={deleter}
     />
   ));
-
-  return <>{Permen}</>;
+  return <>
+    <Link className="btn btn-primary" to={"./"}> home</Link>
+  {ListCard}
+  <Link className="btn btn-primary" to={"./"}> home</Link>
+  </>;
 }
 
 export default Card;

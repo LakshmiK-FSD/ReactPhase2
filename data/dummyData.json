@@ -1,69 +1,69 @@
 {
-  "animalsAdap": [
-    {
-      "id": 1,
-      "image": "http://localhost:3000/imagess/imagepen.png",
-      "Name": "anil",
-      "venum": true,
-      "age": 2,
-      "price": 1200,
-      "rating": "★★★★☆ (4.2/5)",
-      "breed": "Bengal Fox",
-      "habitat": "Forest",
-      "foodPreference": "Fruits & Nuts",
-      "availability": "Adoption"
-    },
-    {
-      "id": 2,
-      "image": "http://localhost:3000/imagess/images.png",
-      "Name": "Nari",
-      "venum": true,
-      "age": 8,
-      "price": 10000,
-      "rating": "★★★★☆ (4.2/5)",
-      "breed": "Bengal Fox",
-      "habitat": "Forest",
-      "foodPreference": "Fruits & Nuts",
-      "availability": "Adoption"
-    },
-    {
-      "id": 3,
-      "image": "http://localhost:3000/imagess/imagespanda.png",
-      "Name": "karadi",
-      "venum": true,
-      "age": 12,
-      "price": 1209,
-      "rating": "★★★☆☆ (3.2/5)",
-      "breed": "Bengal Fox",
-      "habitat": "Forest",
-      "foodPreference": "Fruits & Nuts",
-      "availability": "Adoption"
-    },
-    {
-      "id": 4,
-      "image": "http://localhost:3000/imagess/hero.png",
-      "Name": "react",
-      "venum": true,
-      "age": 9,
-      "price": 500,
-      "rating": "★★★☆☆ (3.2/5)",
-      "breed": "Bengal Fox",
-      "habitat": "Forest",
-      "foodPreference": "Fruits & Nuts",
-      "availability": "Adoption"
-    },
-    {
-      "id": 5,
-      "image": "http://localhost:3000/imagess/imagepen.png",
-      "Name": "lakshmi",
-      "venum": true,
-      "age": 4,
-      "price": 1200,
-      "rating": "★★☆☆☆ (2.2/5)",
-      "breed": "Bengal Fox",
-      "habitat": "Forest",
-      "foodPreference": "Fruits & Nuts",
-      "availability": "Adoption"
-    }
-  ]
+  "school": [
+  {
+    "id": 1,
+    "Name": "kathir",
+    "age": 12,
+    "priceFee": 12000,
+    "height": 100,
+    "weight": 35
+  },
+  {
+    "id": 2,
+    "Name": "meena",
+    "age": 8,
+    "priceFee": 9500,
+    "height": 85,
+    "weight": 28
+  },
+  {
+    "id": 3,
+    "Name": "arjun",
+    "age": 5,
+    "priceFee": 15000,
+    "height": 110,
+    "weight": 40
+  },
+  {
+    "id": 4,
+    "Name": "sneha",
+    "age": 10,
+    "priceFee": 10500,
+    "height": 95,
+    "weight": 32
+  },
+  {
+    "id": 5,
+    "Name": "vijay",
+    "age": 7,
+    "priceFee": 8700,
+    "height": 90,
+    "weight": 30
+  },
+  {
+    "id": 6,
+    "Name": "radha",
+    "age": 6,
+    "priceFee": 9800,
+    "height": 88,
+    "weight": 29
+  },
+  {
+    "id": 7,
+    "Name": "mani",
+    "age": 9,
+    "priceFee": 11200,
+    "height": 102,
+    "weight": 34
+  },
+  {
+    "id": 8,
+    "Name": "geetha",
+    "age": 11,
+    "priceFee": 12500,
+    "height": 108,
+    "weight": 36
+  }
+]
+
 }

@@ -15,8 +15,7 @@ const routi = createBrowserRouter([
   path:"/login",
   element:<FormCr/>,
    errorElement:<NotFound/>
-},
-{
+},{
   path:"/card",
   element:<Card/>,
    errorElement:<NotFound/>

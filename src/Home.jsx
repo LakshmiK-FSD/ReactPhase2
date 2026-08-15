@@ -6,6 +6,7 @@ return(
         HOME PAGE 
     </h1>
     <Link className="btn btn-primary" to={"/login"}>login</Link>
+    <Link className="btn btn-primary" to={"/card"}>Card</Link>
     </>
 );
 }
