@@ -5,12 +5,10 @@ import Carder from "./Carder.jsx";
 import { Link } from "react-router-dom";
 import FormCr from "./FormCr.jsx";
 import { dataContext } from "./Home.jsx";
-
 function Card() {
   const sr = useContext(dataContext); 
   const brmode = "http://localhost:3000/schoolData";
   const [err, tempList] = useFetching(brmode);
-
   if (!tempList) {
     return (
       <div>
@@ -18,7 +16,6 @@ function Card() {
       </div>
     );
   }
-
   const ListCard = tempList.map(callBacPar => (
     <Carder
       key={callBacPar.id}
@@ -30,7 +27,6 @@ function Card() {
       Name={callBacPar.Name}
     />
   ));
-
   return (
     <>
       <FormCr />

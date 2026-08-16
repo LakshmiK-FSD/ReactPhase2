@@ -3,10 +3,8 @@ import { createContext } from "react";
 import Card from "./Card";     
 import Carder from "./Carder";  
 export const dataContext = createContext();
-
 function Home() {
   const soo = "sir ok";
-
   return (
     <>
       <dataContext.Provider value={soo}>
@@ -20,5 +18,4 @@ function Home() {
     </>
   );
 }
-
 export default Home;
