@@ -1,20 +1,25 @@
 import loaderGif from "./assets/blendertimer-load-38.gif";
-import { useEffect, useState} from "react";
+import { useContext } from "react";
 import useFetching from "./useFetching.jsx";
 import Carder from "./Carder.jsx";
 import { Link } from "react-router-dom";
-import Home from "./Home.jsx";
+import FormCr from "./FormCr.jsx";
+import { dataContext } from "./Home.jsx";
+
 function Card() {
-  const brmode="http://localhost:3000/school"
-const [err,tempList] = useFetching(brmode);
+  const sr = useContext(dataContext); 
+  const brmode = "http://localhost:3000/schoolData";
+  const [err, tempList] = useFetching(brmode);
+
   if (!tempList) {
     return (
       <div>
-     {err?<p id="errorr">{err}</p>:<img src={loaderGif} alt=""/>}
+        {err ? <p id="errorr">{err}</p> : <img src={loaderGif} alt="loading..." />}
       </div>
     );
   }
-  const ListCard= tempList.map(callBacPar => (
+
+  const ListCard = tempList.map(callBacPar => (
     <Carder
       key={callBacPar.id}
       priceFee={callBacPar.priceFee}
@@ -25,11 +30,15 @@ const [err,tempList] = useFetching(brmode);
       Name={callBacPar.Name}
     />
   ));
-  return <>
-    <Link className="btn btn-primary" to={"./"}> home</Link>
-  {ListCard}
-  <Link className="btn btn-primary" to={"./"}> home</Link>
-  </>;
+
+  return (
+    <>
+      <FormCr />
+      <p>{sr}</p> 
+      {ListCard}
+      <Link className="btn btn-primary" to={"/"}>Home</Link>
+    </>
+  );
 }
 
 export default Card;

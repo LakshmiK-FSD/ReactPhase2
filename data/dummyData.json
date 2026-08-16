@@ -1,69 +1,84 @@
 {
-  "school": [
-  {
-    "id": 1,
-    "Name": "kathir",
-    "age": 12,
-    "priceFee": 12000,
-    "height": 100,
-    "weight": 35
-  },
-  {
-    "id": 2,
-    "Name": "meena",
-    "age": 8,
-    "priceFee": 9500,
-    "height": 85,
-    "weight": 28
-  },
-  {
-    "id": 3,
-    "Name": "arjun",
-    "age": 5,
-    "priceFee": 15000,
-    "height": 110,
-    "weight": 40
-  },
-  {
-    "id": 4,
-    "Name": "sneha",
-    "age": 10,
-    "priceFee": 10500,
-    "height": 95,
-    "weight": 32
-  },
-  {
-    "id": 5,
-    "Name": "vijay",
-    "age": 7,
-    "priceFee": 8700,
-    "height": 90,
-    "weight": 30
-  },
-  {
-    "id": 6,
-    "Name": "radha",
-    "age": 6,
-    "priceFee": 9800,
-    "height": 88,
-    "weight": 29
-  },
-  {
-    "id": 7,
-    "Name": "mani",
-    "age": 9,
-    "priceFee": 11200,
-    "height": 102,
-    "weight": 34
-  },
-  {
-    "id": 8,
-    "Name": "geetha",
-    "age": 11,
-    "priceFee": 12500,
-    "height": 108,
-    "weight": 36
-  }
-]
-
+  "schoolData": [
+    {
+      "id": 1,
+      "Name": "kathir",
+      "age": 12,
+      "priceFee": 12000,
+      "height": 100,
+      "weight": 35,
+      "details": "Kathir is an energetic student who enjoys sports and outdoor activities. He is known for his leadership qualities in group projects.",
+      "image": "kathir_student.jpg"
+    },
+    {
+      "id": 2,
+      "Name": "meena",
+      "age": 8,
+      "priceFee": 9500,
+      "height": 85,
+      "weight": 28,
+      "details": "Meena is a bright and curious learner who loves drawing and storytelling. She actively participates in class discussions.",
+      "image": "meena_student.jpg"
+    },
+    {
+      "id": 3,
+      "Name": "arjun",
+      "age": 5,
+      "priceFee": 15000,
+      "height": 110,
+      "weight": 40,
+      "details": "Arjun is playful and creative, often coming up with imaginative ideas. He enjoys puzzles and building blocks.",
+      "image": "arjun_student.jpg"
+    },
+    {
+      "id": 4,
+      "Name": "sneha",
+      "age": 10,
+      "priceFee": 10500,
+      "height": 95,
+      "weight": 32,
+      "details": "Sneha is hardworking and disciplined. She excels in mathematics and shows great interest in science experiments.",
+      "image": "sneha_student.jpg"
+    },
+    {
+      "id": 5,
+      "Name": "vijay",
+      "age": 7,
+      "priceFee": 8700,
+      "height": 90,
+      "weight": 30,
+      "details": "Vijay is cheerful and friendly, always helping classmates. He enjoys playing cricket and reading adventure stories.",
+      "image": "vijay_student.jpg"
+    },
+    {
+      "id": 6,
+      "Name": "radha",
+      "age": 6,
+      "priceFee": 9800,
+      "height": 88,
+      "weight": 29,
+      "details": "Radha is thoughtful and observant. She loves painting and has a keen interest in nature and animals.",
+      "image": "radha_student.jpg"
+    },
+    {
+      "id": 7,
+      "Name": "mani",
+      "age": 9,
+      "priceFee": 11200,
+      "height": 102,
+      "weight": 34,
+      "details": "Mani is enthusiastic about technology and computers. He often helps teachers with setting up digital tools.",
+      "image": "mani_student.jpg"
+    },
+    {
+      "id": 8,
+      "Name": "geetha",
+      "age": 11,
+      "priceFee": 12500,
+      "height": 108,
+      "weight": 36,
+      "details": "Geetha is confident and articulate. She enjoys debating and has won prizes in school competitions.",
+      "image": "geetha_student.jpg"
+    }
+  ]
 }
