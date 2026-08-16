@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
 import { Link } from "react-router-dom";
+import { dataContext } from "./Home";
 function FormCr()
 {
+  const sr=useContext(dataContext);
         const [pass1,seterpas1]=useState("");
         const [pass2,seterpas2]=useState("");
         const [passcheck,seter]=useState(false);
@@ -29,6 +31,7 @@ function FormCr()
     <input type="email" className="form-control"  />
     <div  className="form-text">We'll never share your email with anyone else.</div>
   </div>
+  <p>{sr}</p>
   <div className="mb-3">
     <label  className="form-label">Password</label>
     <input type="password" onChange={eventCHanged} className="form-control" value={pass1} />
