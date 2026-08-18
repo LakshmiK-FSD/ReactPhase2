@@ -6,6 +6,7 @@ import './index.css';
 import FormCr from './FormCr.jsx';
 import Home from './Home.jsx';
 import NotFound from './NotFound.jsx';
+import Card from './Card.jsx';
 const routi = createBrowserRouter([
   {path:"/",
    element:<Home/>,
@@ -13,6 +14,10 @@ const routi = createBrowserRouter([
 },{
   path:"/login",
   element:<FormCr/>,
+   errorElement:<NotFound/>
+},{
+  path:"/card",
+  element:<Card/>,
    errorElement:<NotFound/>
 }
 ]);

@@ -1,0 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.card{
+  display: flex;
+  flex-direction: row;   /* cards flow left to right */
+  flex-wrap: wrap;       /* wrap to next line if needed */
+  gap: 20px;             
+}

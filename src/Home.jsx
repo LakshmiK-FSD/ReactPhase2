@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
-function Home(){
-return(
+import { createContext } from "react";
+import Card from "./Card";     
+import Carder from "./Carder";  
+export const dataContext = createContext();
+function Home() {
+  const soo = "sir ok";
+  return (
     <>
-    <h1 className="primary">
-        HOME PAGE 
-    </h1>
-    <Link className="btn btn-primary" to={"/login"}>login</Link>
+      <dataContext.Provider value={soo}>
+        <Card /> 
+      </dataContext.Provider>
+
+      <h1 className="text-primary">HOME PAGE</h1>
+
+      <Link className="btn btn-primary m-2" to={"/login"}>Login</Link>
+      <Link className="btn btn-primary m-2" to={"/card"}>Card</Link>
     </>
-);
+  );
 }
 export default Home;
