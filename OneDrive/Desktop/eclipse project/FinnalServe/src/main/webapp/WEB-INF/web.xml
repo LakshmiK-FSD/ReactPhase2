@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Application display name -->
+    <display-name>LKweb</display-name>
+
+    <!-- Default welcome pages -->
+    <welcome-file-list>
+        <welcome-file>Index.html</welcome-file>
+        <welcome-file>Index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet declaration -->
+    <servlet>
+        <servlet-name>lk</servlet-name>
+        <servlet-class>com.LKPro.AddingServ</servlet-class>
+    </servlet>
+
+    <!-- Servlet mapping -->
+    <servlet-mapping>
+        <servlet-name>lk</servlet-name>
+        <url-pattern>/added</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,48 @@
+
+@charset "ISO-8859-1";
+table {
+	border-radius:5px;
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+  font-family: Arial, sans-serif;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size:20px;
+}
+td {
+  padding: 10px;
+  text-align: center;
+}
+tr:nth-child(even) {
+	color: #f5f4f4;
+  background-color: rgb(22, 41, 9);
+}
+h1{
+  color: rgb(158, 81, 18);
+  font-size: 50px;
+  text-align: center;
+}
+input{
+  background-color: green;
+  display: block;         
+  margin: 20px auto;      
+  cursor: pointer;
+  color: #f5f4f4;
+  border-radius:5px;
+  font-size:30px;
+  padding:30px 60px 30px 60px;
+
+  
+}
+body {
+background: #3F5EFB;
+background: linear-gradient(314deg, rgba(63, 94, 251, 0.65) 0%, rgba(92, 82, 180, 0.45) 49%, rgba(2, 9, 20, 0.63) 77%, rgba(179, 70, 252, 0.6) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;   /* keeps gradient fixed */
+  background-size: cover;    
+}
